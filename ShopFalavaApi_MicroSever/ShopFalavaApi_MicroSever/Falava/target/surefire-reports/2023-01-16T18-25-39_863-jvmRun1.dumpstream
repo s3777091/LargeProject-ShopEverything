@@ -1,0 +1,10 @@
+# Created at 2023-01-16T18:25:40.680
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '18:25:40.664 [main] DEBUG org.springframework.kafka.test.junit.GlobalEmbeddedKafkaTestExecutionListener - JUnit Platform version must be >= 1.8 to use a global embedded kafka server'.
+java.lang.IllegalArgumentException: Stream stdin corrupted. Expected comma after third character in command '18:25:40.664 [main] DEBUG org.springframework.kafka.test.junit.GlobalEmbeddedKafkaTestExecutionListener - JUnit Platform version must be >= 1.8 to use a global embedded kafka server'.
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient$OperationalData.<init>(ForkClient.java:507)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.processLine(ForkClient.java:210)
+	at org.apache.maven.plugin.surefire.booterclient.output.ForkClient.consumeLine(ForkClient.java:177)
+	at org.apache.maven.plugin.surefire.booterclient.output.ThreadedStreamConsumer$Pumper.run(ThreadedStreamConsumer.java:88)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+

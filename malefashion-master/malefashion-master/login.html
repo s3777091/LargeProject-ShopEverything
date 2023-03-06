@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+
+          <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+    <title>Kishop - log in & sign up</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css" integrity="sha512-F7WyTLiiiPqvu2pGumDR15med0MDkUIo5VTVyyfECR5DZmCnDhti9q5VID02ItWjq6fvDfMaBaDl2J3WdL1uxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" integrity="sha512-XJ3ntWHl40opEiE+6dGhfK9NAKOCELrpjiBRQKtu6uJf9Pli8XY+Hikp7rlFzY4ElLSFtzjx9GGgHql7PLSeog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/authenticate.css">
+    <link rel="stylesheet" href="css/animated.css">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+
+    <style>
+        .main-banner{
+            padding-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="app">
+    <div class="wrapper">
+        <!-- ***** v Area Start ***** -->
+        <header class="header-area header-sticky wow" data-wow-duration="0.75s" data-wow-delay="0s">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="main-nav">
+                            <!-- ***** Logo Start ***** -->
+                            <a href="index.html" class="logo" style="font-size: 40px; font-weight:bold">
+                                Kishop
+                            </a>
+                            <!-- ***** Logo End ***** -->
+                            <ul class="nav">
+                                <li class="scroll-to-section">
+                                    <div class="border-first-button"><a href="#" onclick="openRegister()">Register</a></div>
+                                </li>
+                            </ul>
+                            <!-- ***** Menu End ***** -->
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- ***** Header Area End ***** -->
+        <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-lg-6 align-self-center">
+                                <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s"
+                                     data-wow-delay="1s">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div style="font-size: 40px; font-weight: bold;">Buy Everything in kishop</div>
+                                            <p>We Provide The Best product with aforable price for you.</p>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <!-- LOGIN -->
+                                            <div id="login">
+                                                <div class="login-content">
+                                                    <form>
+                                                        <div class="input-div one">
+                                                            <div class="i">
+                                                                <i class="fas fa-envelope"></i>
+                                                            </div>
+                                                            <div class="div">
+
+                                                                <label for="inputEmail"></label>
+                                                                <div id="circle1"></div>
+                                                                <input id="inputEmail" type="email" class="input" placeholder="Email">
+                                                            </div>
+                                                        </div>
+                                                        <div class="input-div pass">
+                                                            <div class="i">
+                                                                <i class="fas fa-lock"></i>
+                                                            </div>
+                                                            <div class="div">
+                                                                <label for="inputPass"></label>
+                                                                <input id="inputPass" type="password" class="input" placeholder="Password">
+                                                            </div>
+                                                        </div>
+                                                        <div class="submit-session">
+                                                            <div class="border-first-button scroll-to-section">
+                                                                <a id="submit_login">Get Started</a>
+                                                            </div>
+                                                            <a id="myBtn" class="forgot-pw" href="#">Forgot Password?</a>
+                                                        </div>
+                                                    </form>
+
+                                                </div>
+                                            </div>
+                                            <!-- REGISTER -->
+                                            <div id="register">
+                                                <div class="login-content">
+                                                    <form>
+                                                        <div class="input-div one">
+                                                            <div class="i">
+                                                                <i class="fas fa-user"></i>
+                                                            </div>
+                                                            <div class="div">
+                                                                <label for="FullName"></label>
+                                                                <div id="circle2"></div>
+                                                                <input id="FullName" class="input" placeholder="Full name">
+                                                            </div>
+                                                        </div>
+                                                        <div class="input-div one">
+                                                            <div class="i">
+                                                                <i class="fas fa-envelope"></i>
+                                                            </div>
+                                                            <div class="div">
+                                                                <label for="register_email_value"></label><input id="register_email_value" type="email" class="input" placeholder="Email">
+                                                            </div>
+                                                        </div>
+                                                        <div class="input-div pass">
+                                                            <div class="i">
+                                                                <i class="fas fa-lock"></i>
+                                                            </div>
+                                                            <div class="div">
+                                                                <label for="register_password_value"></label><input id="register_password_value" type="password" class="input" placeholder="Password">
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="submit-session">
+                                                    <div class="main-button">
+                                                        <div class="scroll-to-section"><a id="regisAcc">create account</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="register-session">
+                                                    <p>Already a member? <a href="#" onclick="openLogin()">Log in</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                                    <img src="https://raw.githubusercontent.com/s3777091/FalavaAPI/master/Facombank/assets/images/slider-dec.png?token=GHSAT0AAAAAAB3UGDTXTABHKX3MOYI6YIGMY55KMRQ" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha512-U6K1YLIFUWcvuw5ucmMtT9HH4t0uz3M366qrF5y4vnyH6dgDzndlcGvH/Lz5k8NFh80SN95aJ5rqGZEdaQZ7ZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js" integrity="sha512-PqRelaJGXVuQ81N6wjUrRQelCDR7z8RvKGiR9SbSxKHPIt15eJDmIVv9EJgwq0XvgylszsjzvQ0+VyI2WtIshQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.js" integrity="sha512-ZjK7a00dTbrRt4c0efsVC+IM+AZRSW1NpGNNbXQQTjjp3N3Q2FJ0Mg8XTIoyNwWcton/qjf40SnI/g/2OMKiYA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/animation.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/authentication.js"></script>
+
+</body>
+
+</html>
